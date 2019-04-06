@@ -1,0 +1,30 @@
+.CardRed {
+  width: 304px;
+  height: 62px;
+}
+
+.Title {
+  width: 105px;
+  height: 18px;
+  font-family: AirbnbCerealApp;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--charcoal);
+}
+
+.Description {
+  width: 192px;
+  height: 36px;
+  font-family: AirbnbCerealApp;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--steel-grey);
+}

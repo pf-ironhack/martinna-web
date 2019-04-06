@@ -1,4 +1,5 @@
 @font-face {
   font-family: 'AirbnbCerealApp';
-  src: url('/Users/gonzalosobrino/Documents/Ironhack/Projects/final-project/martinna-web/public/css/fonts/AirbnbCereal-Medium.ttf')
+  src: url('./assets/css/fonts/AirbnbCereal-Medium.ttf')
 }
+

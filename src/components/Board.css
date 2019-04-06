@@ -1,5 +1,4 @@
 .Board {
-  padding-left: 80px;
-  padding-right: 80px;
   background-color: #fafcfe;
+  max-width: 1440px;
 }
