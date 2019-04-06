@@ -1,0 +1,20 @@
+.TopCat {
+  width: 304px;
+  height: 456px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08), 0 3px 12px 0 rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+
+.Title {
+  width: 115px;
+  height: 23px;
+  font-family: 'AirbnbCerealApp';
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--charcoal);
+}
