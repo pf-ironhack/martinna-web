@@ -1,6 +1,9 @@
-.Title {
-  width: 218px;
+.MainTitle {
+  width: 624px;
   height: 31px;
+  margin-left: 248px;
+  margin-top: 48px;
+  margin-bottom: 17px;
   font-family: AirbnbCerealApp;
   font-size: 24px;
   font-weight: bold;

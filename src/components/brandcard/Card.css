@@ -6,3 +6,52 @@
   background-color: #ffffff;
   font-family: "AirbnbCerealApp";
 }
+
+.TitleCard {
+  width: 384px;
+  height: 23px;
+  margin-left: 16px;
+  font-family: AirbnbCerealApp;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--charcoal);
+}
+
+.DescriptionCard {
+  width: 384px;
+  height: 21px;
+  margin-left: 16px;
+  font-family: AirbnbCerealApp-Light;
+  font-size: 16px;
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7c8383;
+}
+
+.Img {
+  width: 88px;
+  height: 88px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.Category {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.Vote {
+  width: 64px;
+  height: 72px;
+  border-radius: 4px;
+  border: solid 1px var(--ice);
+}
+

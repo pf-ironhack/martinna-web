@@ -17,3 +17,18 @@
 .Login {
   margin-right: 247.5px;
 }
+
+.NavList {
+  width: 74px;
+  height: 18px;
+  padding-bottom: 30px;
+  font-family: AirbnbCerealApp;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8383;
+}

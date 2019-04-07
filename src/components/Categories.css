@@ -1,0 +1,51 @@
+.CatNavBar {
+  width: 1440px;
+  height: 64px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+#UlCat {
+  list-style-type: none;
+}
+
+.LiCat {
+  float: left;
+  width: auto;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 1px #7c8383;
+  font-family: AirbnbCerealApp-Book;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7c8383;
+  padding-left: 22px;
+  padding-right: 23px;
+}
+
+.LiCat:hover {
+  background-color: #253031;
+}
+.LiCat:hover .AItems {
+  color: #ffffff;
+}
+
+
+
+.CatName {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.AItems {
+  color: #7c8383;
+}
+
+.AItems:hover {
+  color: #ffffff;
+}

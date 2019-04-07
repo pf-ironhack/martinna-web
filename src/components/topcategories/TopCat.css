@@ -6,10 +6,13 @@
   background-color: #ffffff;
 }
 
-.Title {
+.TitleCatRed {
   width: 115px;
   height: 23px;
-  font-family: 'AirbnbCerealApp';
+  margin-top: 54px;
+  margin-right: 437px;
+  margin-bottom: 11px;
+  font-family: AirbnbCerealApp;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;

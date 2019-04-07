@@ -1,10 +1,12 @@
-.CardRed {
-  width: 304px;
-  height: 62px;
+.ImgRed {
+  width: 56px;
+  height: 52px;
+  margin-top: 36px;
+  margin-left: 16px;
 }
 
-.Title {
-  width: 105px;
+.TitleRed {
+  width: 192px;
   height: 18px;
   font-family: AirbnbCerealApp;
   font-size: 14px;
@@ -16,15 +18,23 @@
   color: var(--charcoal);
 }
 
-.Description {
+.DescriptionRed {
   width: 192px;
   height: 36px;
-  font-family: AirbnbCerealApp;
+  font-family: AirbnbCerealApp-Light;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--steel-grey);
+  color: #7c8383;
+}
+
+.Shape {
+  width: 304px;
+  height: 114px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08), 0 3px 12px 0 rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
 }

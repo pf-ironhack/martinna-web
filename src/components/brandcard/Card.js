@@ -5,17 +5,20 @@ import './Card.css'
 const Card = (props) => {
   return ( 
     // <div className="Card">
-      <div className="card mb-3" style={{maxWidth: 540 + "px"}}>
+      <div className="card mb-3 Card" style={{maxWidth: 624 + "px", marginLeft: 252 + "px" }}>
         <div className="row no-gutters">
-          <div className="col-md-4">
-            <img src="..." className="card-img" alt="..."/>
+          <div className="col-md-2">
+            <img src={props.logo} className="Img card-img" alt="..."/>
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 className="TitleCard" style={{width: 384 + "px"}}>{props.title}</h5>
+              <p className="DescriptionCard" style={{width: 384 + "px", height: 21 + "px"}}>{props.description.substr(0, 49)+"..."}</p>
+              <p className="Category"><small className="text-muted">{props.tags[0]}</small></p>
             </div>
+          </div>
+          <div className="col-md-2">
+          <p className="Vote" style={{width: 64 + "px", height: 72 + "px", borderRadius: 4 + "px", border: "green"}}>{props.userLikes.length}</p>
           </div>
         </div>
       </div>

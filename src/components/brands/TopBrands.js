@@ -4,14 +4,13 @@ import martinaService from '../../services/MartinaService'
 import './TopBrands.css'
 import Card from '../brandcard/Card';
 
-class TopDateRange extends Component {
+class TopBrands extends Component {
 
   state = {
     brands: []
   }
 
   componentDidMount() {
-    console.log(this.props);
     martinaService.getBrands(this.props.query)
       .then(
         (brands) => this.setState({ brands: brands }),
@@ -21,15 +20,16 @@ class TopDateRange extends Component {
 
   render() {
     const { brands } = this.state;
-    return (<div>
-      <h2 className="Title">Top 10 of this Week</h2>
-      {brands.map(b => (
-        <p key={b.id}>{b.title}</p>)
-      )}
-        <div className="Week"><Card /></div>
+    return (
+      <div className="TopBrands">
+        <h2 className="MainTitle">Top 10 of this Week</h2>
+        {brands.map(b => (
+          <Card {...b} key={b.id} />
+          )
+        )}
       </div>
     );
   }
 }
 
-export default TopDateRange;
+export default TopBrands;

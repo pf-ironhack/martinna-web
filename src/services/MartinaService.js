@@ -15,6 +15,9 @@ const getBrands = ({ tag, startDate, endDate }) => {
     .then(response => response.data)
 }
 
+const getCategories = () => http.get('/brands/categories').then(response => response.data);
+
 export default {
-  getBrands
+  getBrands,
+  getCategories
 }
