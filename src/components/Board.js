@@ -5,6 +5,7 @@ import TopBrands from './brands/TopBrands';
 import TopCat from './topcategories/TopCat';
 import moment from 'moment';
 
+
 class Board extends Component {
   state = { 
     weeks: []

@@ -2,11 +2,25 @@ import React, { Component, Fragment } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import imgLoader from '../../utils/imgLoader'
 import './NavBar.css'
+import { withAuthConsumer } from '../../contexts/AuthStore';
+import authService from '../../services/AuthService';
+import { withRouter } from 'react-router-dom';
+
 
 class NavBar extends Component {
+
+  handleLogout = () => {
+    authService.logout()
+      .then(() => {
+        const { history } = this.props;
+        this.props.onUserChange({});
+        history.push('/login');
+      })
+  }
   
   render() { 
     const { martinaLogo } = imgLoader
+    const { user } = this.props;
     return (
       <nav className="navbar navbar-expand-lg navbar-light">
         <a href="/">
@@ -24,10 +38,10 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="NavList navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">Categories <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="/categories">Categories <span className="sr-only">(current)</span></a>
             </li>
             <li className="Login nav-item">
-              <a className="nav-link" href="#">Login/Register</a>
+              <a className="nav-link" href="/register">Register/Login</a>
             </li>
           </ul>
           

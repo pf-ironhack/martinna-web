@@ -4,8 +4,8 @@ import NavBar from './components/misc/NavBar';
 import Board from './components/Board';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Categories from './components/Categories';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
+import Login from './components/auth/Login'
+import Register from './components/auth/Register'
 
 class App extends Component {
 

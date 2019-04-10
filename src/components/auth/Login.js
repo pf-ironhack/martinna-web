@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import authService from '../../services/AuthService';
 import { Redirect, Link } from 'react-router-dom';
 import { withAuthConsumer } from '../../contexts/AuthStore'
+import './Login.css'
 
 const emailPattern = /(.+)@(.+){2,}\.(.+){2,}/i;
 
@@ -93,36 +94,38 @@ class Login extends Component {
   render() {
     const { touch, errors, user } = this.state;
     if (this.state.authenticated) {
-      return (<Redirect to="/board" />);
+      return (<Redirect to="/categories" />);
     } else {
       return (
-        <div className="row justify-content-center mt-5">
-          <div className="col-xs-12 col-3">
+        
+          <div>
             <form onSubmit={this.onSubmit}>
-              <div className="input-group mb-2">
-                <div className="input-group-prepend">
-                  <div className="input-group-text"><i className="fa fa-envelope-o"></i></div>
-                </div>
+              <div className="RegisterTitle">
+                <p>Log-in</p>
+              </div>
+
+              <div className="DescriptionRegister">
+                <p>Do you already have an account?</p>
+              </div>
+
+              <div className="LoginEmail input-group mb-2">
                 <input type="text" className={`form-control ${touch.email && errors.email && 'is-invalid'}`} name="email" placeholder="Email" onChange={this.handleChange} value={user.email} onBlur={this.handleBlur} />
                 <div className="invalid-feedback">{errors.email}</div>
               </div>
               
-              <div className="input-group mb-2">
-                <div className="input-group-prepend">
-                  <div className="input-group-text" style={{width: '42px'}}><i className="fa fa-lock"></i></div>
-                </div>
+              <div className="LoginPass input-group mb-2">
                 <input type="password" className={`form-control ${touch.password && errors.password && 'is-invalid'}`} name="password" placeholder="Password" onChange={this.handleChange} value={user.password} onBlur={this.handleBlur}/>
                 <div className="invalid-feedback">{errors.password}</div>
               </div>
 
               <div className="from-actions">
-                <button type="submit" className="btn btn-primary btn-block" disabled={this.hasErrors()}>Login</button>
+                <button type="submit" className="ButtonRegister btn btn-block" disabled={this.hasErrors()}>Log-in</button>
               </div>
             </form>
             <hr />
             <p className="text-center">Don't have an account? <Link to="/register">Sign up</Link></p>
           </div>
-        </div>
+        
       );
     }
   }

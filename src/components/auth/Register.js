@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import authService from '../../services/AuthService';
 import { Redirect, Link } from 'react-router-dom';
+import './Register.css'
 
 const emailPattern = /(.+)@(.+){2,}\.(.+){2,}/i;
 
@@ -10,7 +11,7 @@ const validators = {
     if (!value || value === '') {
       error = 'Name is required';
     }
-    
+
     return error;
   },
   email: (value) => {
@@ -101,42 +102,40 @@ export default class Register extends Component {
       return (<Redirect to="/login" />);
     } else {
       return (
-        <div className="row justify-content-center mt-5">
-          <div className="col-xs-12 col-3">
+        
+          <div>
             <form onSubmit={this.onSubmit}>
-            
-              <div className="input-group mb-2">
-                <div className="input-group-prepend">
-                  <div className="input-group-text"><i className="fa fa-envelope-o"></i></div>
+              <div className="RegisterTitle">
+                  <p>Register Now!</p>
                 </div>
-                <input type="text" className={`form-control ${touch.email && errors.email && 'is-invalid'}`} name="email" placeholder="Email" onChange={this.handleChange} value={user.email} onBlur={this.handleBlur} />
-                <div className="invalid-feedback">{errors.email}</div>
-              </div>
 
-              <div className="input-group mb-2">
-                <div className="input-group-prepend">
-                  <div className="input-group-text"><i className="fa fa-envelope-o"></i></div>
+                <div className="DescriptionRegister">
+                  <p>Take the most advantages! Vote, rank and save your favorite brands!</p>
                 </div>
-                <input type="text" className={`form-control ${touch.name && errors.name && 'is-invalid'}`} name="name" placeholder="Name" onChange={this.handleChange} value={user.name} onBlur={this.handleBlur} />
-                <div className="invalid-feedback">{errors.name}</div>
-              </div>
+        
+                <div className="RegisterName input-group mb-2">
+                  <input type="text" className={`form-control ${touch.name && errors.name && 'is-invalid'}`} name="name" placeholder="Name" onChange={this.handleChange} value={user.name} onBlur={this.handleBlur} />
+                  <div className="invalid-feedback">{errors.name}</div>
+                </div>
+
+                <div className="RegisterEmail input-group mb-2">
+                  <input type="text" className={`form-control ${touch.email && errors.email && 'is-invalid'}`} name="email" placeholder="Email" onChange={this.handleChange} value={user.email} onBlur={this.handleBlur} />
+                  <div className="invalid-feedback">{errors.email}</div>
+                </div>
+                
+                <div className="RegisterPass input-group mb-2">
+                  <input type="password" className={`form-control ${touch.password && errors.password && 'is-invalid'}`} name="password" placeholder="Password" onChange={this.handleChange} value={user.password} onBlur={this.handleBlur}/>
+                  <div className="invalid-feedback">{errors.password}</div>
+                </div>
+
+                <div className="from-actions">
+                  <button type="submit" className="ButtonRegister btn btn-block" disabled={this.hasErrors()}>Create account</button>
+                </div>            
               
-              <div className="input-group mb-2">
-                <div className="input-group-prepend">
-                  <div className="input-group-text" style={{width: '42px'}}><i className="fa fa-lock"></i></div>
-                </div>
-                <input type="password" className={`form-control ${touch.password && errors.password && 'is-invalid'}`} name="password" placeholder="Password" onChange={this.handleChange} value={user.password} onBlur={this.handleBlur}/>
-                <div className="invalid-feedback">{errors.password}</div>
-              </div>
-
-              <div className="from-actions">
-                <button type="submit" className="btn btn-primary btn-block" disabled={this.hasErrors()}>Register</button>
-              </div>
             </form>
             <hr />
             <p className="text-center">Already registered? <Link to="/login">Login</Link></p>
           </div>
-        </div>
       );
     }
   }
