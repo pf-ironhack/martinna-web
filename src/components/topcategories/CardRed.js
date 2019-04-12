@@ -8,7 +8,7 @@ const CardRed = (props) => {
       <div className="row no-gutters">
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="TitleRed card-title">{props.title.length > 20 ? props.title.substr(0, 20)+"..." : props.title}</h5>
+            <a className="TitleRed" href={props.webLink} >{props.title.length > 20 ? props.title.substr(0, 20)+"..." : props.title}</a>
             <p className="DescriptionRed card-text">{props.description.substr(0, 49)+"..."}</p>
           </div>
         </div>

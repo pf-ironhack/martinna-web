@@ -1,0 +1,132 @@
+.BrandDiv {
+  margin-top: 48px;
+  margin-left: 98px;
+}
+.CreateProduct {
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 1px #00a6a6;
+  font-family: AirbnbCerealApp-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #00a6a6;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 13px;
+
+}
+
+.ProfileNav {
+  width: 76px;
+  height: 21px;
+  font-family: AirbnbCerealApp-Bold;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #253031;
+  margin-left: 102px;
+  margin-top: 24px;
+}
+
+.MyProfile {
+  font-family: AirbnbCerealApp;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #253031;
+}
+
+.LogOutDiv {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.LogOut {
+  font-family: AirbnbCerealApp-Book;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #7c8383;
+}
+
+.ProfileTitle {
+  width: 114px;
+  height: 31px;
+  font-family: AirbnbCerealApp-Bold;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #253031;
+  margin-top: 48px;
+
+}
+.ProfileNameDiv {
+  border-radius: 4px;
+  border: solid 1px #bdc0c1;
+  margin-top: 33px;
+  width: 474px;
+}
+
+.ProfileName {
+  height: 56px;
+}
+
+.ProfileEmailDiv {
+  border-radius: 4px;
+  border: solid 1px #bdc0c1;
+  margin-top: 33px;
+  width: 474px;
+}
+
+.ProfileEmail {
+  height: 56px;
+}
+
+.ProfilePassDiv {
+  border-radius: 4px;
+  border: solid 1px #bdc0c1;
+  margin-top: 33px;
+  width: 474px;
+}
+
+.ProfilePass {
+  height: 56px;
+}
+
+.ButtonProfile {
+  width: 224px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: #00a6a6;
+  margin-top: 42px;
+  margin-left: 250px;
+  color: #ffffff;
+
+  font-family: AirbnbCerealApp-Medium;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}

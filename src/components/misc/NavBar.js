@@ -40,9 +40,20 @@ class NavBar extends Component {
             <li className="nav-item">
               <a className="nav-link" href="/categories">Categories <span className="sr-only">(current)</span></a>
             </li>
-            <li className="Login nav-item">
-              <a className="nav-link" href="/register">Register/Login</a>
-            </li>
+            { !user.email && (
+              <Fragment>
+              <li className="Login nav-item">
+                <a className="nav-link" href="/register">Register/Login</a>
+              </li>
+              </Fragment>
+            )}
+            { user.email && (
+              <Fragment>
+              <li className="Login nav-item">
+                <a className="LoginYes nav-link" href="/profile" >Hi {user.name}!</a>
+              </li>
+              </Fragment>
+            )}
           </ul>
           
         </div>
@@ -51,4 +62,4 @@ class NavBar extends Component {
   }
 }
  
-export default NavBar;
+export default withAuthConsumer(withRouter(NavBar))
