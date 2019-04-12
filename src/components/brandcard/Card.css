@@ -48,10 +48,14 @@
   margin-bottom: 16px;
 }
 
-.Vote {
+.VoteDiv {
   width: 64px;
   height: 72px;
   border-radius: 4px;
-  border: solid 1px var(--ice);
+  border: solid 1px #e9eaea;
+}
+
+.Vote {
+
 }
 

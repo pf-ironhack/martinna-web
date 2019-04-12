@@ -94,7 +94,7 @@ class Login extends Component {
   render() {
     const { touch, errors, user } = this.state;
     if (this.state.authenticated) {
-      return (<Redirect to="/categories" />);
+      return (<Redirect to="/" />);
     } else {
       return (
         

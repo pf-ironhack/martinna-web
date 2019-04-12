@@ -9,7 +9,7 @@ class Card extends Component {
   }
 
   handleLike = () => {
-    
+
   }
 
   render() {
@@ -27,8 +27,9 @@ class Card extends Component {
                 <p className="Category"><small className="text-muted">{this.props.tags[0]}</small></p>
               </div>
             </div>
-            <div className="col-md-2">
-            <p className="Vote" style={{width: 64 + "px", height: 72 + "px", borderRadius: 4 + "px", border: "green"}}>{this.props.userLikes.length}</p>
+            <div className="VoteDiv col-md-2">
+              <img src="img/triangle.svg" class="Triangle" />
+              <p className="Vote">{this.props.userLikes.length}</p>
             </div>
           </div>
         </div>
