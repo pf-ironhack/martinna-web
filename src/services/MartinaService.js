@@ -17,9 +17,10 @@ const getBrands = ({ tag, startDate, endDate }) => {
 
 const getCategories = () => http.get('/brands/categories').then(response => response.data);
 
-const doLike = () => http.post('/brands/:id/like').then(response => response.data)
+const doLike = (id) => http.post(`/brands/${id}/like`).then(response => response.data)
 
 export default {
   getBrands,
-  getCategories
+  getCategories,
+  doLike
 }

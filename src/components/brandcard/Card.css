@@ -53,9 +53,53 @@
   height: 72px;
   border-radius: 4px;
   border: solid 1px #e9eaea;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 24px;
 }
+
+.VoteDiv:hover {
+  background-color: #00a6a6;
+  color: #ffffff;
+}
+
+.VoteDiv:hover p {
+  background-color: #00a6a6;
+  color: #ffffff;
+}
+
+.VoteDiv:hover .Triangle {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+
+
 
 .Vote {
-
+  width: 38px;
+  height: 18px;
+  font-family: AirbnbCerealApp;
+  font-size: 14px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #253031;
+  margin-left: 13px;
+  margin-top: 13px;
 }
+
+.Triangle {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  border-radius: 1px;
+  background-color: #253031;
+  margin-top: 17px;
+  margin-left: 26px;
+}
+
 

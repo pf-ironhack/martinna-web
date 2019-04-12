@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
-
+import martinaService from '../../services/MartinaService'
 import './Card.css'
 
 class Card extends Component {
 
   state = {
-    userLikes: []
+    likes: this.props.likes
   }
 
   handleLike = () => {
-
+    martinaService.doLike(this.props.id)
+      .then(brand => {
+        this.setState({
+          likes: brand.likes
+        })
+      })
   }
 
   render() {
+    const { user } = this.props;
     return ( 
-      // <div className="Card">
         <div className="card mb-3 Card" style={{maxWidth: 624 + "px", marginLeft: 252 + "px" }}>
           <div className="row no-gutters">
             <div className="col-md-2">
-              <img src={this.props.logo} className="Img card-img" alt="..."/>
+              <img src={this.props.logo} className="Img card-img" alt={this.props.id}/>
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -27,15 +32,27 @@ class Card extends Component {
                 <p className="Category"><small className="text-muted">{this.props.tags[0]}</small></p>
               </div>
             </div>
-            <div className="VoteDiv col-md-2">
-              <img src="img/triangle.svg" class="Triangle" />
-              <p className="Vote">{this.props.userLikes.length}</p>
+            {/* { !user.name && (
+              <div className="VoteDiv">
+              <img src="../../assets/imgs/triangle.svg" className="Triangle" />
+              <p className="Vote">{this.state.likes}</p>
+            </div>
+            )}
+            { user.name && (
+              <div className="VoteDiv" onClick={this.handleLike}>
+              <img src="../../assets/imgs/triangle.svg" className="Triangle" />
+              <p className="Vote">{this.state.likes}</p>
+            </div>
+            )} */}
+            <div className="VoteDiv" onClick={this.handleLike}>
+              <img src="../../assets/imgs/triangle.svg" className="Triangle" />
+              <p className="Vote">{this.state.likes}</p>
             </div>
           </div>
-        </div>
-      // </div>
+        </div>  
      );
   }
 }
  
 export default Card;
+
