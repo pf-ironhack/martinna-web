@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/martinna-web/./static/js/runtime~main.9ee517c6.js"
   },
   {
-    "revision": "c0637e80c94463e3953c",
-    "url": "/martinna-web/./static/js/main.d66e1e1f.chunk.js"
+    "revision": "c46f1d9fbee7d4451837",
+    "url": "/martinna-web/./static/js/main.46f37c52.chunk.js"
   },
   {
-    "revision": "89247440dc12d2501e2d",
-    "url": "/martinna-web/./static/js/2.a7c98bd9.chunk.js"
+    "revision": "3f0e2b7c789d3f693bb9",
+    "url": "/martinna-web/./static/js/2.526488fd.chunk.js"
   },
   {
-    "revision": "c0637e80c94463e3953c",
+    "revision": "c46f1d9fbee7d4451837",
     "url": "/martinna-web/./static/css/main.9be7254d.chunk.css"
   },
   {
-    "revision": "89247440dc12d2501e2d",
+    "revision": "3f0e2b7c789d3f693bb9",
     "url": "/martinna-web/./static/css/2.72040b9c.chunk.css"
   },
   {
-    "revision": "6caeaa08f8e6bb100bb1fc5e1166fc59",
+    "revision": "d50ee791d4432f9ab23247fc1e8c004a",
     "url": "/martinna-web/./index.html"
   }
 ];
