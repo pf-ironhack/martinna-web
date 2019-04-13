@@ -28,8 +28,8 @@ class Board extends Component {
             <TopBrands query={topLastWeekQuery} />
           </div>
           <div className="col-4">
-            <TopCat query={{ tag: 'Fashion' }} />
             <TopCat query={{ tag: 'Sneakers and Shoes' }} />
+            <TopCat query={{ tag: 'Android' }} />
           </div>
         </div>
       </div>

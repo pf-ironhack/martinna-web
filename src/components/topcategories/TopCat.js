@@ -22,7 +22,7 @@ class TopCat extends Component {
     const { brands } = this.state;
     return (
       <div>
-        <h2 className="TitleCatRed">Top Brands</h2>
+        <h2 className="TitleCatRed">Top Sneakers</h2>
         {brands.map(b => (
           <CardRed {...b} key={b.id}/>
           )

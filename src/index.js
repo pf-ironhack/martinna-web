@@ -4,15 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css' ;
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { AuthStore } from './contexts/AuthStore';
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <AuthStore>
       <App /> 
     </AuthStore>
-  </HashRouter>,
+  </BrowserRouter>,
 document.getElementById('root')
 );
 
