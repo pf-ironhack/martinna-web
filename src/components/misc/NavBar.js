@@ -23,7 +23,7 @@ class NavBar extends Component {
     const { user } = this.props;
     return (
       <nav className="navbar navbar-expand-lg navbar-light">
-        <a href="/">
+        <a href="/martinna-web">
           <img className="Logo" src={martinaLogo} alt="Logo" />
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,19 +38,19 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="NavList navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/categories">Categories <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="martinna-web/categories">Categories <span className="sr-only">(current)</span></a>
             </li>
             { !user.email && (
               <Fragment>
               <li className="Login nav-item">
-                <a className="nav-link" href="/register">Register/Login</a>
+                <a className="nav-link" href="martinna-web/register">Register/Login</a>
               </li>
               </Fragment>
             )}
             { user.email && (
               <Fragment>
               <li className="Login nav-item">
-                <a className="LoginYes nav-link" href="/profile" >Hi {user.name}!</a>
+                <a className="LoginYes nav-link" href="martinna-web/profile" >Hi {user.name}!</a>
               </li>
               </Fragment>
             )}
