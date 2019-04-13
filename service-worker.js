@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/martinna-web/./precache-manifest.a09ab05542ebf86798dd4e1088a5e06e.js"
+  "/martinna-web/precache-manifest.4d494667aeb3c39f602b03e7ab59ca14.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/martinna-web/./index.html", {
+workbox.routing.registerNavigationRoute("/martinna-web/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
