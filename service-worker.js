@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/martinna-web/precache-manifest.76f9e08cdbf6f5ca537eb2c05e98a12e.js"
+  "/martinna-web/precache-manifest.6e2999d1d0f75d4331ff3e9ef4dfd997.js"
 );
 
 workbox.clientsClaim();
